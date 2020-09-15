@@ -11,6 +11,7 @@ Due to some network reasons(GFW), I would choose offline installation instead of
 - [Rust](#rust)
 - [Golang](#golang)
 - [deno](#deno)
+- [Cxx Boost library](#cxx-boost-library)
 
 ## How-tos <!-- omit in toc -->
 
@@ -48,4 +49,18 @@ ENVIRONMENT VARIABLES:
                          (module downloads, fetch)
     HTTPS_PROXY          Proxy address for HTTPS requests
                          (module downloads, fetch)
+```
+
+### Cxx Boost library
+
+1. Download latest release from [https://www.boost.org/users/download/#live](https://www.boost.org/users/download/#live)
+
+2. run commands.
+
+```bash
+tar zxf boost_xxxxx
+cd boost_xxxxx
+./bootstrap.sh # default install to /usr/local
+./b2 # build
+./b2 install # install
 ```
